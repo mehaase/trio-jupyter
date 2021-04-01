@@ -1,4 +1,8 @@
 .ipynb_checkpoints/
 .vscode/
-__pycache__
+__pycache__/
+build/
+data_kernelspec/
+dist/
+trio_jupyter.egg-info/
 venv

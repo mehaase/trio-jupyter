@@ -6,6 +6,8 @@ installs a Jupyter kernelspec that activates Jupyter's Trio mode.
 
 ![Demo of Jupyter in Trio mode](./demo.png)
 
+> **ATTENTION** This package currently requires a private fork of ipykernel, pending
+
 ## Getting Started
 
 Install Jupyter along with this package.
@@ -39,3 +41,34 @@ way this feature interacts with other features.
 
 * The `%time` and `%%time` cell magics do not work with async code.
 * Trio mode may not work in other notebook runtimes, such as Visual Studio Code.
+
+## Publishing New Versions
+
+To publish a new version of this project, you will need to have Twine installed. It's
+recommended that you do this in a virtual env.
+
+```
+$ . venv/bin/activate
+$ pip install twine
+```
+
+Update the project version in `setup.py` and create a new Git tag.
+
+```
+$ git status # make sure the working copy is clean
+$ git tag X.Y.Z
+$ git push origin X.Y.Z
+```
+
+Build the project:
+
+```
+$ rm -fr dist
+$ python setup.py sdist
+```
+
+Upload to PyPI:
+
+```
+$ twine upload dist/*
+```

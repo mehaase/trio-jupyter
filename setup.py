@@ -15,7 +15,7 @@ KERNEL_NAME = "python3-trio"
 
 setup_args = dict(
     name="trio-jupyter",
-    version="0.1.0",
+    version="0.1.1",
     description="Trio mode for Jupyter Lab/Notebook",
     long_description="Installs a kernelspec for Jupyter Lab/Notebook based on ipykernel with Trio mode enabled",
     packages=["trio_jupyter"],
