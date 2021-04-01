@@ -1,6 +1,6 @@
 # trio-jupyter
 
-This project lets you use [Trio](http://github.com/python-trio/trio/) inside a [Jupyter
+This project lets you use [Trio](https://github.com/python-trio/trio/) inside a [Jupyter
 notebook](https://jupyter.readthedocs.io/en/latest/). Under the hood, this project
 installs a Jupyter kernelspec that activates Jupyter's Trio mode.
 
@@ -17,7 +17,7 @@ $ pip install jupyterlab trio-jupyter
 > **ATTENTION** This package currently requires a private fork of ipykernel, pending
 > release of [ipykernel PR #627](https://github.com/ipython/ipykernel/pull/627). In the
 > meantime, install the forked ipykernel after trio-jupyter by running:
-> `pip install https://github.com/mehaase/ipykernel`
+> `pip install git+https://github.com/mehaase/ipykernel`
 
 
 Start Jupyter. This will start the server and open your browser to the Jupyter GUI.
@@ -36,7 +36,7 @@ is created at startup and runs until the notebook's kernel is terminated. There 
 > Note: you *do not* need to run the `%autoawait trio` cell magic inside of a Trio
 > notebook. In fact, trying to do so will result in an error.
 
-For more details, see the [Trio Demo notebook](./Trio%20Demo.ipynb) in this repository.
+For more details, see the [Trio Demo notebook](./TrioDemo.ipynb) in this repository.
 
 ## Known Issues
 
