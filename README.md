@@ -6,8 +6,6 @@ installs a Jupyter kernelspec that activates Jupyter's Trio mode.
 
 ![Demo of Jupyter in Trio mode](./demo.png)
 
-> **ATTENTION** This package currently requires a private fork of ipykernel, pending
-
 ## Getting Started
 
 Install Jupyter along with this package.
@@ -15,6 +13,12 @@ Install Jupyter along with this package.
 ```
 $ pip install jupyterlab trio-jupyter
 ```
+
+> **ATTENTION** This package currently requires a private fork of ipykernel, pending
+> release of [ipykernel PR #627](https://github.com/ipython/ipykernel/pull/627). In the
+> meantime, install the forked ipykernel after trio-jupyter by running:
+> `pip install https://github.com/mehaase/ipykernel`
+
 
 Start Jupyter. This will start the server and open your browser to the Jupyter GUI.
 
